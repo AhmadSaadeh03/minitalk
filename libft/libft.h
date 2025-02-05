@@ -6,18 +6,18 @@
 /*   By: asaadeh <asaadeh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 14:19:57 by asaadeh           #+#    #+#             */
-/*   Updated: 2025/01/16 16:25:53 by asaadeh          ###   ########.fr       */
+/*   Updated: 2025/02/05 17:19:25 by asaadeh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <stdarg.h>
 # include <stddef.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
-# include <stdarg.h>
 
 int		ft_isalpha(int s);
 int		ft_isdigit(int s);
@@ -53,7 +53,7 @@ int		ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 char	**ft_split(char const *s, char c);
-int	check(char c, va_list args);
-int	ft_lnum(int a);
-int	ft_printf(const char *c, ...);
+int		check(char c, va_list args);
+int		ft_lnum(int a);
+int		ft_printf(const char *c, ...);
 #endif

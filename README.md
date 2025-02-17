@@ -5,12 +5,7 @@ Minitalk is a simple communication program built using UNIX signals in C. It all
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Examples](#examples)
-- [Compiling](#compiling)
-- [Project Structure](#project-structure)
-- [License](#license)
-
+- 
 ## Description
 
 This project is an exercise to implement a basic messaging system using UNIX signals. The client sends messages to the server using a custom signal encoding scheme. It demonstrates an understanding of signals and how they can be used for communication between processes.
@@ -20,5 +15,5 @@ This project is an exercise to implement a basic messaging system using UNIX sig
 To get started with the *minitalk* project, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/minitalk.git
+git clone https://github.com/AhmadSaadeh03/minitalk.git
 cd minitalk

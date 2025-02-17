@@ -5,7 +5,6 @@ Minitalk is a simple communication program built using UNIX signals in C. It all
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
-- 
 ## Description
 
 This project is an exercise to implement a basic messaging system using UNIX signals. The client sends messages to the server using a custom signal encoding scheme. It demonstrates an understanding of signals and how they can be used for communication between processes.

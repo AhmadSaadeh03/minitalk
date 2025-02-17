@@ -6,11 +6,11 @@
 /*   By: asaadeh <asaadeh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 16:39:32 by asaadeh           #+#    #+#             */
-/*   Updated: 2025/02/05 21:08:53 by asaadeh          ###   ########.fr       */
+/*   Updated: 2025/02/08 15:52:28 by asaadeh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
+#include "../includes/minitalk.h"
 
 static char	*g_message = NULL;
 
@@ -59,7 +59,8 @@ static void	signal_handler(int sig, siginfo_t *info, void *context)
 		{
 			if (g_message)
 				helper();
-			ft_printf("Acknowledgment (SIGUSR1) sent to client with PID: %d\n", info->si_pid);
+			ft_printf("Acknowledgment (SIGUSR1) sent to client with PID: %d\n",
+				info->si_pid);
 		}
 		else
 			append_char(c);
@@ -73,16 +74,7 @@ int	main(void)
 {
 	struct sigaction	sa;
 
-    ft_printf(" *                                                                         *\n");
-    ft_printf(" *                          :::      ::::::::                              *\n");
-    ft_printf(" *                        :+:      :+:    :+:                              *\n");
-    ft_printf(" *                      +:+ +:+         +:+                                *\n");
-    ft_printf(" *                    +#+  +:+       +#+                                   *\n");
-    ft_printf(" *                  +#+#+#+#+#+   +#+                    		   *\n");
-    ft_printf(" *                    #+#    #+#                           		   *\n");
-    ft_printf(" *                   ###   ########                      		   *\n");
-    ft_printf(" *                                                                         *\n");
-    ft_printf(" *                 Server PID: %d                                       *\n", getpid());
+	ft_printf(" *  Server PID:%d    *\n", getpid());
 	sa.sa_sigaction = signal_handler;
 	sa.sa_flags = SA_SIGINFO;
 	sigemptyset(&sa.sa_mask);

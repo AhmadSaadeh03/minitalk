@@ -8,8 +8,8 @@ CLIENT=client
 LIBFT_DIR = libft
 LIBFT_A = libft/libft.a
 
-SRCS_SERVER = srcs/server.c
-SRCS_CLIENT = srcs/client.c
+SRCS_SERVER = src/server.c
+SRCS_CLIENT = src/client.c
 OBJS_SERVER = $(SRCS_SERVER:.c=.o)
 OBJS_CLIENT = $(SRCS_CLIENT:.c=.o)
 

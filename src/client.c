@@ -6,11 +6,11 @@
 /*   By: asaadeh <asaadeh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 16:39:23 by asaadeh           #+#    #+#             */
-/*   Updated: 2025/02/05 19:46:04 by asaadeh          ###   ########.fr       */
+/*   Updated: 2025/02/08 15:53:47 by asaadeh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
+#include "../includes/minitalk.h"
 
 static int	g_signal = 0;
 
